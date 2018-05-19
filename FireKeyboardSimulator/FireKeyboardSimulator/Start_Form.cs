@@ -12,10 +12,7 @@ namespace FireKeyboardSimulator
 {
     public partial class Start_Form : Form
     {
-        Core1 Learn;
-        Core_2 SpeedUp;
-        Core_3 Records;
-        Core_4 Endless;
+        Form1 Learn;
         public Start_Form()
         {
             InitializeComponent();
@@ -25,7 +22,12 @@ namespace FireKeyboardSimulator
         {
             if (radioButton1.Checked)
             {
-                Core1 f = new Core1(this.textBox1.Text);
+                Form1 f = new Form1(this.textBox1.Text);
+                f.Show();
+            }
+            if (radioButton2.Checked)
+            {
+                Form1 f = new Form1(this.textBox1.Text);
                 f.Show();
             }
         }
