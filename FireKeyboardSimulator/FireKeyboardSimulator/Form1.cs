@@ -12,13 +12,39 @@ namespace FireKeyboardSimulator
 {
     public partial class Form1 : Form
     {
+        Random rnd = new Random();
+        private void GroundMechanics(string input)
+        {
+            bool smallLett = false, bigLett = false, numb = false;
+            bool hotKeys = false, punktuation = false;
+            string alphabet = "";
+            int chooser = 0;
+
+            for (int i = 0; i < 5; i++)
+            {
+                if (input[i] == 'a') smallLett = true;
+                if (input[i] == 'A') bigLett = true;
+                if (input[i] == '1') numb = true;
+                if (input[i] == 'H') hotKeys = true;
+                if (input[i] == 'P') punktuation = true;
+            }
+
+            if (smallLett) alphabet += "qwertyuiopasdfghjklzxcvbnm";
+            if (bigLett) alphabet += "QWERTYUIOPASDFGHJKLZXCVBNM";
+            if (numb) alphabet += "1234567890";
+            if (punktuation) alphabet += "[]{};:'<>,./";
+
+            chooser = rnd.Next(alphabet.Length);
+            label2.Text = chooser.ToString();
+            label1.Text += alphabet[chooser].ToString();
+
+        }
         string data;
         public Form1(string data)
         {
             InitializeComponent();
             this.data = data;
 
-            label1.Text = data;
             button1.Enabled = false;
             button2.Enabled = false;
             button3.Enabled = false;
@@ -598,6 +624,21 @@ namespace FireKeyboardSimulator
                 button41.Enabled = false;
                 button41.BackColor = Color.MediumSeaGreen;
             }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            GroundMechanics(data);
+        }
+
+        private void Form1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (label1.Text[0] == e.KeyChar)
+            {
+                label1.Text = label1.Text.Remove(0, 1);
+                label1.ForeColor = Color.Green;
+            }
+            else label1.ForeColor = Color.Red;
         }
     }
 }

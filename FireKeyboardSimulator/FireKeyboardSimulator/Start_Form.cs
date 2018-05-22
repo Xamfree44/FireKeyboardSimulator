@@ -12,6 +12,7 @@ namespace FireKeyboardSimulator
 {
     public partial class Start_Form : Form
     {
+        static string data = "";
         Form1 f_1;
         Form2 f_2;
         Form3 f_3;
@@ -23,24 +24,32 @@ namespace FireKeyboardSimulator
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (radioButton1.Checked)
+            if (smallLett.Checked) data += "a";
+            if (BigLett.Checked) data += "A";
+            if (Numb.Checked) data += "1";
+            if (HotKeys.Checked) data += "H";
+            if (Punctuation.Checked) data += "P";
+
+            for (; data.Length < 6;) data += "U";
+
+            if (LearnButton.Checked)
             {
-                Form1 f_1 = new Form1(this.textBox1.Text);
+                Form1 f_1 = new Form1(data);
                 f_1.Show();
             }
-            if (radioButton2.Checked)
+            if (SpeedUpButton.Checked)
             {
-                Form2 f_2 = new Form2(this.textBox1.Text);
+                Form2 f_2 = new Form2(data);
                 f_2.Show();
             }
-            if (radioButton3.Checked)
+            if (ScoreButton.Checked)
             {
-                Form3 f_3 = new Form3(this.textBox1.Text);
+                Form3 f_3 = new Form3(data);
                 f_3.Show();
             }
-            if (radioButton4.Checked)
+            if (EndlessButton.Checked)
             {
-                Form4 f_4 = new Form4(this.textBox1.Text);
+                Form4 f_4 = new Form4(data);
                 f_4.Show();
             }
         }

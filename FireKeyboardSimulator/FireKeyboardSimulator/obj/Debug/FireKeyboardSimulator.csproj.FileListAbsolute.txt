@@ -59,3 +59,17 @@ C:\Users\emil\Desktop\C#\FireKeyboardSimulator\FireKeyboardSimulator\obj\Debug\F
 C:\Users\emil\Desktop\C#\FireKeyboardSimulator\FireKeyboardSimulator\obj\Debug\FireKeyboardSimulator.csproj.CoreCompileInputs.cache
 C:\Users\emil\Desktop\C#\FireKeyboardSimulator\FireKeyboardSimulator\obj\Debug\FireKeyboardSimulator.exe
 C:\Users\emil\Desktop\C#\FireKeyboardSimulator\FireKeyboardSimulator\obj\Debug\FireKeyboardSimulator.pdb
+C:\Users\user\Documents\Visual Studio 2017\Projects\FireKeyboardSimulator-master\FireKeyboardSimulator\FireKeyboardSimulator\bin\Debug\FireKeyboardSimulator.exe.config
+C:\Users\user\Documents\Visual Studio 2017\Projects\FireKeyboardSimulator-master\FireKeyboardSimulator\FireKeyboardSimulator\bin\Debug\FireKeyboardSimulator.exe
+C:\Users\user\Documents\Visual Studio 2017\Projects\FireKeyboardSimulator-master\FireKeyboardSimulator\FireKeyboardSimulator\bin\Debug\FireKeyboardSimulator.pdb
+C:\Users\user\Documents\Visual Studio 2017\Projects\FireKeyboardSimulator-master\FireKeyboardSimulator\FireKeyboardSimulator\obj\Debug\FireKeyboardSimulator.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\Visual Studio 2017\Projects\FireKeyboardSimulator-master\FireKeyboardSimulator\FireKeyboardSimulator\obj\Debug\FireKeyboardSimulator.Form1.resources
+C:\Users\user\Documents\Visual Studio 2017\Projects\FireKeyboardSimulator-master\FireKeyboardSimulator\FireKeyboardSimulator\obj\Debug\FireKeyboardSimulator.Form2.resources
+C:\Users\user\Documents\Visual Studio 2017\Projects\FireKeyboardSimulator-master\FireKeyboardSimulator\FireKeyboardSimulator\obj\Debug\FireKeyboardSimulator.Form3.resources
+C:\Users\user\Documents\Visual Studio 2017\Projects\FireKeyboardSimulator-master\FireKeyboardSimulator\FireKeyboardSimulator\obj\Debug\FireKeyboardSimulator.Form4.resources
+C:\Users\user\Documents\Visual Studio 2017\Projects\FireKeyboardSimulator-master\FireKeyboardSimulator\FireKeyboardSimulator\obj\Debug\FireKeyboardSimulator.Start_Form.resources
+C:\Users\user\Documents\Visual Studio 2017\Projects\FireKeyboardSimulator-master\FireKeyboardSimulator\FireKeyboardSimulator\obj\Debug\FireKeyboardSimulator.Properties.Resources.resources
+C:\Users\user\Documents\Visual Studio 2017\Projects\FireKeyboardSimulator-master\FireKeyboardSimulator\FireKeyboardSimulator\obj\Debug\FireKeyboardSimulator.csproj.GenerateResource.cache
+C:\Users\user\Documents\Visual Studio 2017\Projects\FireKeyboardSimulator-master\FireKeyboardSimulator\FireKeyboardSimulator\obj\Debug\FireKeyboardSimulator.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\Visual Studio 2017\Projects\FireKeyboardSimulator-master\FireKeyboardSimulator\FireKeyboardSimulator\obj\Debug\FireKeyboardSimulator.exe
+C:\Users\user\Documents\Visual Studio 2017\Projects\FireKeyboardSimulator-master\FireKeyboardSimulator\FireKeyboardSimulator\obj\Debug\FireKeyboardSimulator.pdb

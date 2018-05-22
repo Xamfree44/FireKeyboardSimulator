@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -76,6 +77,8 @@
             this.button46 = new System.Windows.Forms.Button();
             this.button47 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -512,8 +515,22 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(582, 40);
             this.label1.TabIndex = 47;
-            this.label1.Text = "Text";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 200;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(556, 163);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.TabIndex = 48;
+            this.label2.Text = "label2";
             // 
             // Form1
             // 
@@ -522,6 +539,7 @@
             this.BackgroundImage = global::FireKeyboardSimulator.Properties.Resources.keyboard;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(775, 440);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button47);
             this.Controls.Add(this.button46);
@@ -574,8 +592,10 @@
             this.Name = "Form1";
             this.Text = "1";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Form1_KeyPress);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -629,6 +649,8 @@
         private System.Windows.Forms.Button button46;
         private System.Windows.Forms.Button button47;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label label2;
     }
 }
 

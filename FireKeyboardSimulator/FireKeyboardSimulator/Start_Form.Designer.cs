@@ -31,18 +31,17 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.EndlessButton = new System.Windows.Forms.RadioButton();
+            this.ScoreButton = new System.Windows.Forms.RadioButton();
+            this.SpeedUpButton = new System.Windows.Forms.RadioButton();
+            this.LearnButton = new System.Windows.Forms.RadioButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.Punctuation = new System.Windows.Forms.CheckBox();
+            this.HotKeys = new System.Windows.Forms.CheckBox();
+            this.Numb = new System.Windows.Forms.CheckBox();
+            this.BigLett = new System.Windows.Forms.CheckBox();
+            this.smallLett = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -69,10 +68,10 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.radioButton4);
-            this.groupBox1.Controls.Add(this.radioButton3);
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
+            this.groupBox1.Controls.Add(this.EndlessButton);
+            this.groupBox1.Controls.Add(this.ScoreButton);
+            this.groupBox1.Controls.Add(this.SpeedUpButton);
+            this.groupBox1.Controls.Add(this.LearnButton);
             this.groupBox1.Location = new System.Drawing.Point(144, 56);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(177, 133);
@@ -80,57 +79,57 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Режим";
             // 
-            // radioButton4
+            // EndlessButton
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(7, 89);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(93, 17);
-            this.radioButton4.TabIndex = 3;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Бесконечный";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.EndlessButton.AutoSize = true;
+            this.EndlessButton.Location = new System.Drawing.Point(7, 89);
+            this.EndlessButton.Name = "EndlessButton";
+            this.EndlessButton.Size = new System.Drawing.Size(93, 17);
+            this.EndlessButton.TabIndex = 3;
+            this.EndlessButton.TabStop = true;
+            this.EndlessButton.Text = "Бесконечный";
+            this.EndlessButton.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // ScoreButton
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(7, 66);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(78, 17);
-            this.radioButton3.TabIndex = 2;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "На рекорд";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.ScoreButton.AutoSize = true;
+            this.ScoreButton.Location = new System.Drawing.Point(7, 66);
+            this.ScoreButton.Name = "ScoreButton";
+            this.ScoreButton.Size = new System.Drawing.Size(78, 17);
+            this.ScoreButton.TabIndex = 2;
+            this.ScoreButton.TabStop = true;
+            this.ScoreButton.Text = "На рекорд";
+            this.ScoreButton.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // SpeedUpButton
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(7, 43);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(104, 17);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Ускоряющийся";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.SpeedUpButton.AutoSize = true;
+            this.SpeedUpButton.Location = new System.Drawing.Point(7, 43);
+            this.SpeedUpButton.Name = "SpeedUpButton";
+            this.SpeedUpButton.Size = new System.Drawing.Size(104, 17);
+            this.SpeedUpButton.TabIndex = 1;
+            this.SpeedUpButton.TabStop = true;
+            this.SpeedUpButton.Text = "Ускоряющийся";
+            this.SpeedUpButton.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // LearnButton
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(7, 20);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(73, 17);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Обучение";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.LearnButton.AutoSize = true;
+            this.LearnButton.Location = new System.Drawing.Point(7, 20);
+            this.LearnButton.Name = "LearnButton";
+            this.LearnButton.Size = new System.Drawing.Size(73, 17);
+            this.LearnButton.TabIndex = 0;
+            this.LearnButton.TabStop = true;
+            this.LearnButton.Text = "Обучение";
+            this.LearnButton.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.checkBox5);
-            this.groupBox2.Controls.Add(this.checkBox4);
-            this.groupBox2.Controls.Add(this.checkBox3);
-            this.groupBox2.Controls.Add(this.checkBox2);
-            this.groupBox2.Controls.Add(this.checkBox1);
+            this.groupBox2.Controls.Add(this.Punctuation);
+            this.groupBox2.Controls.Add(this.HotKeys);
+            this.groupBox2.Controls.Add(this.Numb);
+            this.groupBox2.Controls.Add(this.BigLett);
+            this.groupBox2.Controls.Add(this.smallLett);
             this.groupBox2.Location = new System.Drawing.Point(327, 56);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(198, 133);
@@ -138,55 +137,55 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Сложность";
             // 
-            // checkBox5
+            // Punctuation
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(6, 110);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(120, 17);
-            this.checkBox5.TabIndex = 4;
-            this.checkBox5.Text = "Знаки препинания";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.Punctuation.AutoSize = true;
+            this.Punctuation.Location = new System.Drawing.Point(6, 110);
+            this.Punctuation.Name = "Punctuation";
+            this.Punctuation.Size = new System.Drawing.Size(120, 17);
+            this.Punctuation.TabIndex = 4;
+            this.Punctuation.Text = "Знаки препинания";
+            this.Punctuation.UseVisualStyleBackColor = true;
             // 
-            // checkBox4
+            // HotKeys
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(6, 88);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(120, 17);
-            this.checkBox4.TabIndex = 3;
-            this.checkBox4.Text = "Сочетания клавиш";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.HotKeys.AutoSize = true;
+            this.HotKeys.Location = new System.Drawing.Point(6, 88);
+            this.HotKeys.Name = "HotKeys";
+            this.HotKeys.Size = new System.Drawing.Size(120, 17);
+            this.HotKeys.TabIndex = 3;
+            this.HotKeys.Text = "Сочетания клавиш";
+            this.HotKeys.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // Numb
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(6, 65);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(62, 17);
-            this.checkBox3.TabIndex = 2;
-            this.checkBox3.Text = "Цифры";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.Numb.AutoSize = true;
+            this.Numb.Location = new System.Drawing.Point(6, 65);
+            this.Numb.Name = "Numb";
+            this.Numb.Size = new System.Drawing.Size(62, 17);
+            this.Numb.TabIndex = 2;
+            this.Numb.Text = "Цифры";
+            this.Numb.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // BigLett
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(6, 42);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(118, 17);
-            this.checkBox2.TabIndex = 1;
-            this.checkBox2.Text = "Прописные буквы";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.BigLett.AutoSize = true;
+            this.BigLett.Location = new System.Drawing.Point(6, 42);
+            this.BigLett.Name = "BigLett";
+            this.BigLett.Size = new System.Drawing.Size(118, 17);
+            this.BigLett.TabIndex = 1;
+            this.BigLett.Text = "Прописные буквы";
+            this.BigLett.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
+            // smallLett
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(6, 20);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(109, 17);
-            this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "Строчные буквы";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.smallLett.AutoSize = true;
+            this.smallLett.Location = new System.Drawing.Point(6, 20);
+            this.smallLett.Name = "smallLett";
+            this.smallLett.Size = new System.Drawing.Size(109, 17);
+            this.smallLett.TabIndex = 0;
+            this.smallLett.Text = "Строчные буквы";
+            this.smallLett.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
@@ -198,19 +197,11 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(13, 122);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(119, 20);
-            this.textBox1.TabIndex = 5;
-            // 
             // Start_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(537, 201);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -224,7 +215,6 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -233,18 +223,17 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton EndlessButton;
+        private System.Windows.Forms.RadioButton ScoreButton;
+        private System.Windows.Forms.RadioButton SpeedUpButton;
+        private System.Windows.Forms.RadioButton LearnButton;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox Punctuation;
+        private System.Windows.Forms.CheckBox HotKeys;
+        private System.Windows.Forms.CheckBox Numb;
+        private System.Windows.Forms.CheckBox BigLett;
+        private System.Windows.Forms.CheckBox smallLett;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
