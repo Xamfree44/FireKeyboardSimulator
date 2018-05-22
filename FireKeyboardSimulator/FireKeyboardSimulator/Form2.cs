@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace FireKeyboardSimulator
 {
-    public partial class Form1 : Form
+    public partial class Form2 : Form
     {
         string data;
-        public Form1(string data)
+        public Form2(string data)
         {
             InitializeComponent();
             this.data = data;

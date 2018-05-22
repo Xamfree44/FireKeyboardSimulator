@@ -1,6 +1,6 @@
 ﻿namespace FireKeyboardSimulator
 {
-    partial class Form1
+    partial class Form4
     {
         /// <summary>
         /// Required designer variable.
@@ -98,13 +98,12 @@
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.Control;
             this.button3.Location = new System.Drawing.Point(151, 202);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(45, 45);
             this.button3.TabIndex = 2;
             this.button3.Text = "3";
-            this.button3.UseVisualStyleBackColor = false;
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
@@ -117,13 +116,12 @@
             // 
             // button5
             // 
-            this.button5.BackColor = System.Drawing.SystemColors.Control;
             this.button5.Location = new System.Drawing.Point(253, 202);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(45, 45);
             this.button5.TabIndex = 4;
             this.button5.Text = "5";
-            this.button5.UseVisualStyleBackColor = false;
+            this.button5.UseVisualStyleBackColor = true;
             // 
             // button6
             // 
@@ -136,13 +134,12 @@
             // 
             // button7
             // 
-            this.button7.BackColor = System.Drawing.SystemColors.Control;
             this.button7.Location = new System.Drawing.Point(355, 202);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(45, 45);
             this.button7.TabIndex = 6;
             this.button7.Text = "7";
-            this.button7.UseVisualStyleBackColor = false;
+            this.button7.UseVisualStyleBackColor = true;
             // 
             // button8
             // 
@@ -497,13 +494,12 @@
             // 
             // button47
             // 
-            this.button47.BackColor = System.Drawing.SystemColors.Control;
             this.button47.Location = new System.Drawing.Point(661, 202);
             this.button47.Name = "button47";
             this.button47.Size = new System.Drawing.Size(61, 45);
             this.button47.TabIndex = 46;
             this.button47.Text = "←";
-            this.button47.UseVisualStyleBackColor = false;
+            this.button47.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -515,7 +511,7 @@
             this.label1.Text = "Text";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Form1
+            // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -571,8 +567,8 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.KeyPreview = true;
-            this.Name = "Form1";
-            this.Text = "1";
+            this.Name = "Form4";
+            this.Text = "4";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
             this.ResumeLayout(false);

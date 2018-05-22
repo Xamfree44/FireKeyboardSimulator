@@ -50,7 +50,7 @@
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("BankGothic Lt BT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(138, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(387, 44);
@@ -217,7 +217,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Name = "Start_Form";
-            this.Text = "Form1";
+            this.Text = "FireKeyboardSimulator";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
