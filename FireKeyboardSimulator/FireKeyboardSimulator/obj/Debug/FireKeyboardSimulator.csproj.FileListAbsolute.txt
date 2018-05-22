@@ -45,3 +45,17 @@ C:\Users\emil\Desktop\FireKeyboardSimulator-master\FireKeyboardSimulator\FireKey
 C:\Users\emil\Desktop\FireKeyboardSimulator-master\FireKeyboardSimulator\FireKeyboardSimulator\obj\Debug\FireKeyboardSimulator.Form2.resources
 C:\Users\emil\Desktop\FireKeyboardSimulator-master\FireKeyboardSimulator\FireKeyboardSimulator\obj\Debug\FireKeyboardSimulator.Form3.resources
 C:\Users\emil\Desktop\FireKeyboardSimulator-master\FireKeyboardSimulator\FireKeyboardSimulator\obj\Debug\FireKeyboardSimulator.Form4.resources
+C:\Users\emil\Desktop\C#\FireKeyboardSimulator\FireKeyboardSimulator\bin\Debug\FireKeyboardSimulator.exe.config
+C:\Users\emil\Desktop\C#\FireKeyboardSimulator\FireKeyboardSimulator\bin\Debug\FireKeyboardSimulator.exe
+C:\Users\emil\Desktop\C#\FireKeyboardSimulator\FireKeyboardSimulator\bin\Debug\FireKeyboardSimulator.pdb
+C:\Users\emil\Desktop\C#\FireKeyboardSimulator\FireKeyboardSimulator\obj\Debug\FireKeyboardSimulator.csprojAssemblyReference.cache
+C:\Users\emil\Desktop\C#\FireKeyboardSimulator\FireKeyboardSimulator\obj\Debug\FireKeyboardSimulator.Form1.resources
+C:\Users\emil\Desktop\C#\FireKeyboardSimulator\FireKeyboardSimulator\obj\Debug\FireKeyboardSimulator.Form2.resources
+C:\Users\emil\Desktop\C#\FireKeyboardSimulator\FireKeyboardSimulator\obj\Debug\FireKeyboardSimulator.Form3.resources
+C:\Users\emil\Desktop\C#\FireKeyboardSimulator\FireKeyboardSimulator\obj\Debug\FireKeyboardSimulator.Form4.resources
+C:\Users\emil\Desktop\C#\FireKeyboardSimulator\FireKeyboardSimulator\obj\Debug\FireKeyboardSimulator.Start_Form.resources
+C:\Users\emil\Desktop\C#\FireKeyboardSimulator\FireKeyboardSimulator\obj\Debug\FireKeyboardSimulator.Properties.Resources.resources
+C:\Users\emil\Desktop\C#\FireKeyboardSimulator\FireKeyboardSimulator\obj\Debug\FireKeyboardSimulator.csproj.GenerateResource.cache
+C:\Users\emil\Desktop\C#\FireKeyboardSimulator\FireKeyboardSimulator\obj\Debug\FireKeyboardSimulator.csproj.CoreCompileInputs.cache
+C:\Users\emil\Desktop\C#\FireKeyboardSimulator\FireKeyboardSimulator\obj\Debug\FireKeyboardSimulator.exe
+C:\Users\emil\Desktop\C#\FireKeyboardSimulator\FireKeyboardSimulator\obj\Debug\FireKeyboardSimulator.pdb

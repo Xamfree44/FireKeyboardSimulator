@@ -329,12 +329,12 @@ namespace FireKeyboardSimulator
                 button13.Enabled = true;
                 button13.BackColor = Color.MediumSlateBlue;
             }
-            if (e.Modifiers == Keys.LShiftKey)
+            if (e.Modifiers == Keys.Shift)
             {
                 button14.Enabled = true;
                 button14.BackColor = Color.MediumSlateBlue;
             }
-            if (e.KeyCode == Keys.RShiftKey)
+            if (e.Modifiers == Keys.Shift)
             {
                 button42.Enabled = true;
                 button42.BackColor = Color.MediumSlateBlue;
@@ -568,12 +568,12 @@ namespace FireKeyboardSimulator
                 button13.Enabled = false;
                 button13.BackColor = Color.MediumPurple;
             }
-            if (e.KeyCode == Keys.LShiftKey)
+            if (e.Modifiers == Keys.Shift)
             {
                 button14.Enabled = false;
                 button14.BackColor = Color.MediumPurple;
             }
-            if (e.KeyCode == Keys.RShiftKey)
+            if (e.Modifiers == Keys.Shift)
             {
                 button42.Enabled = false;
                 button42.BackColor = Color.MediumPurple;
