@@ -77,12 +77,12 @@
             this.button46 = new System.Windows.Forms.Button();
             this.button47 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.timer_Form1 = new System.Windows.Forms.Timer(this.components);
             this.button48 = new System.Windows.Forms.Button();
             this.button49 = new System.Windows.Forms.Button();
             this.button50 = new System.Windows.Forms.Button();
             this.button51 = new System.Windows.Forms.Button();
             this.button52 = new System.Windows.Forms.Button();
+            this.timer_Form1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // button1
@@ -521,12 +521,6 @@
             this.label1.TabIndex = 47;
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // timer_Form1
-            // 
-            this.timer_Form1.Enabled = true;
-            this.timer_Form1.Interval = 3000;
-            this.timer_Form1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
             // button48
             // 
             this.button48.Location = new System.Drawing.Point(49, 406);
@@ -570,6 +564,12 @@
             this.button52.Size = new System.Drawing.Size(367, 45);
             this.button52.TabIndex = 52;
             this.button52.UseVisualStyleBackColor = true;
+            // 
+            // timer_Form1
+            // 
+            this.timer_Form1.Enabled = true;
+            this.timer_Form1.Interval = 1;
+            this.timer_Form1.Tick += new System.EventHandler(this.timer_Form1_Tick);
             // 
             // Form1
             // 
@@ -633,7 +633,8 @@
             this.Controls.Add(this.button1);
             this.KeyPreview = true;
             this.Name = "Form1";
-            this.Text = "1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Training";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Form1_KeyPress);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
@@ -691,12 +692,12 @@
         private System.Windows.Forms.Button button46;
         private System.Windows.Forms.Button button47;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Timer timer_Form1;
         private System.Windows.Forms.Button button48;
         private System.Windows.Forms.Button button49;
         private System.Windows.Forms.Button button50;
         private System.Windows.Forms.Button button51;
         private System.Windows.Forms.Button button52;
+        private System.Windows.Forms.Timer timer_Form1;
     }
 }
 

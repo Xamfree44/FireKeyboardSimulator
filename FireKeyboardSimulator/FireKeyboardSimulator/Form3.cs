@@ -42,7 +42,7 @@ namespace FireKeyboardSimulator
             {
                 timer_Form3.Enabled = false;
                 MessageBox.Show("Вы не выбрали сложность!");
-                Application.Exit();
+                this.Hide();
             }
         }
 

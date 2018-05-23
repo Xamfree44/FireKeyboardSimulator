@@ -18,7 +18,7 @@ namespace FireKeyboardSimulator
         {
             bool smallLett = false, bigLett = false, numb = false, punctuation = false;
             string alphabet = "";
-            int chooser = 0;
+            int chooser = 0, length = 15;
 
             for (int i = 0; i < 4; i++)
             {
@@ -33,16 +33,20 @@ namespace FireKeyboardSimulator
             if (numb) alphabet += "1234567890";
             if (punctuation) alphabet += "<>,.-+";
 
-            chooser = rnd.Next(alphabet.Length);
             if (alphabet.Length > 0)
             {
-                label1.Text += alphabet[chooser].ToString();
+                for (int i = 0; i < length; i++)
+                {
+                    chooser = rnd.Next(alphabet.Length);
+                    timer_Form1.Enabled = false;
+                    label1.Text += alphabet[chooser].ToString();
+                }
             }
             else
             {
                 timer_Form1.Enabled = false;
                 MessageBox.Show("Вы не выбрали сложность!");
-                Application.Exit();
+                this.Hide();
             }
         }
 
@@ -50,7 +54,6 @@ namespace FireKeyboardSimulator
         public Form1(string data)
         {
             InitializeComponent();
-            timer_Form1.Interval = 1000;
             this.data = data;
 
             button1.Enabled = false;
@@ -682,19 +685,26 @@ namespace FireKeyboardSimulator
             }
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            GroundMechanics(data);
-        }
-
         private void Form1_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (label1.Text[0] == e.KeyChar)
             {
-                label1.Text = label1.Text.Remove(0, 1);
                 label1.ForeColor = Color.Green;
+                label1.Text = label1.Text.Remove(0, 1);
             }
             else label1.ForeColor = Color.Red;
+
+            if (label1.Text.Length <= 0)
+            {
+                timer_Form1.Enabled = false;
+                MessageBox.Show("Обучение пройдено!");
+                this.Hide();
+            }
+        }
+
+        private void timer_Form1_Tick(object sender, EventArgs e)
+        {
+            GroundMechanics(data);
         }
     }
 }

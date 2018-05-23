@@ -628,6 +628,7 @@
             this.Controls.Add(this.button1);
             this.KeyPreview = true;
             this.Name = "Form2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "2";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Form2_KeyPress);
