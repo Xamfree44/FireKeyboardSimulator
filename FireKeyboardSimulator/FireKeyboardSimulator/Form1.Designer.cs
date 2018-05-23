@@ -77,8 +77,12 @@
             this.button46 = new System.Windows.Forms.Button();
             this.button47 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.label2 = new System.Windows.Forms.Label();
+            this.timer_Form1 = new System.Windows.Forms.Timer(this.components);
+            this.button48 = new System.Windows.Forms.Button();
+            this.button49 = new System.Windows.Forms.Button();
+            this.button50 = new System.Windows.Forms.Button();
+            this.button51 = new System.Windows.Forms.Button();
+            this.button52 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -511,26 +515,61 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(95, 75);
+            this.label1.Location = new System.Drawing.Point(95, 82);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(582, 40);
             this.label1.TabIndex = 47;
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // timer1
+            // timer_Form1
             // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 200;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.timer_Form1.Enabled = true;
+            this.timer_Form1.Interval = 3000;
+            this.timer_Form1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // label2
+            // button48
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(556, 163);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 48;
-            this.label2.Text = "label2";
+            this.button48.Location = new System.Drawing.Point(49, 406);
+            this.button48.Name = "button48";
+            this.button48.Size = new System.Drawing.Size(75, 45);
+            this.button48.TabIndex = 48;
+            this.button48.Text = "Ctrl";
+            this.button48.UseVisualStyleBackColor = true;
+            // 
+            // button49
+            // 
+            this.button49.Location = new System.Drawing.Point(647, 406);
+            this.button49.Name = "button49";
+            this.button49.Size = new System.Drawing.Size(75, 45);
+            this.button49.TabIndex = 49;
+            this.button49.Text = "Ctrl";
+            this.button49.UseVisualStyleBackColor = true;
+            // 
+            // button50
+            // 
+            this.button50.Location = new System.Drawing.Point(130, 406);
+            this.button50.Name = "button50";
+            this.button50.Size = new System.Drawing.Size(66, 45);
+            this.button50.TabIndex = 50;
+            this.button50.Text = "Alt";
+            this.button50.UseVisualStyleBackColor = true;
+            // 
+            // button51
+            // 
+            this.button51.Location = new System.Drawing.Point(575, 406);
+            this.button51.Name = "button51";
+            this.button51.Size = new System.Drawing.Size(66, 45);
+            this.button51.TabIndex = 51;
+            this.button51.Text = "Alt";
+            this.button51.UseVisualStyleBackColor = true;
+            // 
+            // button52
+            // 
+            this.button52.Location = new System.Drawing.Point(202, 406);
+            this.button52.Name = "button52";
+            this.button52.Size = new System.Drawing.Size(367, 45);
+            this.button52.TabIndex = 52;
+            this.button52.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -538,8 +577,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::FireKeyboardSimulator.Properties.Resources.keyboard;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(775, 440);
-            this.Controls.Add(this.label2);
+            this.ClientSize = new System.Drawing.Size(775, 472);
+            this.Controls.Add(this.button52);
+            this.Controls.Add(this.button51);
+            this.Controls.Add(this.button50);
+            this.Controls.Add(this.button49);
+            this.Controls.Add(this.button48);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button47);
             this.Controls.Add(this.button46);
@@ -595,7 +638,6 @@
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Form1_KeyPress);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -649,8 +691,12 @@
         private System.Windows.Forms.Button button46;
         private System.Windows.Forms.Button button47;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Timer timer_Form1;
+        private System.Windows.Forms.Button button48;
+        private System.Windows.Forms.Button button49;
+        private System.Windows.Forms.Button button50;
+        private System.Windows.Forms.Button button51;
+        private System.Windows.Forms.Button button52;
     }
 }
 

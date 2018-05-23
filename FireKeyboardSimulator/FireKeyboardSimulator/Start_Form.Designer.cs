@@ -30,21 +30,20 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.Mode = new System.Windows.Forms.GroupBox();
             this.EndlessButton = new System.Windows.Forms.RadioButton();
             this.ScoreButton = new System.Windows.Forms.RadioButton();
             this.SpeedUpButton = new System.Windows.Forms.RadioButton();
             this.LearnButton = new System.Windows.Forms.RadioButton();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.Punctuation = new System.Windows.Forms.CheckBox();
-            this.HotKeys = new System.Windows.Forms.CheckBox();
-            this.Numb = new System.Windows.Forms.CheckBox();
-            this.BigLett = new System.Windows.Forms.CheckBox();
+            this.Сomplication = new System.Windows.Forms.GroupBox();
+            this.punctuation = new System.Windows.Forms.CheckBox();
+            this.numb = new System.Windows.Forms.CheckBox();
+            this.bigLett = new System.Windows.Forms.CheckBox();
             this.smallLett = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.Mode.SuspendLayout();
+            this.Сomplication.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -66,18 +65,18 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // groupBox1
+            // Mode
             // 
-            this.groupBox1.Controls.Add(this.EndlessButton);
-            this.groupBox1.Controls.Add(this.ScoreButton);
-            this.groupBox1.Controls.Add(this.SpeedUpButton);
-            this.groupBox1.Controls.Add(this.LearnButton);
-            this.groupBox1.Location = new System.Drawing.Point(144, 56);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(177, 133);
-            this.groupBox1.TabIndex = 2;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Режим";
+            this.Mode.Controls.Add(this.EndlessButton);
+            this.Mode.Controls.Add(this.ScoreButton);
+            this.Mode.Controls.Add(this.SpeedUpButton);
+            this.Mode.Controls.Add(this.LearnButton);
+            this.Mode.Location = new System.Drawing.Point(144, 56);
+            this.Mode.Name = "Mode";
+            this.Mode.Size = new System.Drawing.Size(177, 119);
+            this.Mode.TabIndex = 2;
+            this.Mode.TabStop = false;
+            this.Mode.Text = "Режим";
             // 
             // EndlessButton
             // 
@@ -123,64 +122,53 @@
             this.LearnButton.Text = "Обучение";
             this.LearnButton.UseVisualStyleBackColor = true;
             // 
-            // groupBox2
+            // Сomplication
             // 
-            this.groupBox2.Controls.Add(this.Punctuation);
-            this.groupBox2.Controls.Add(this.HotKeys);
-            this.groupBox2.Controls.Add(this.Numb);
-            this.groupBox2.Controls.Add(this.BigLett);
-            this.groupBox2.Controls.Add(this.smallLett);
-            this.groupBox2.Location = new System.Drawing.Point(327, 56);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(198, 133);
-            this.groupBox2.TabIndex = 3;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Сложность";
+            this.Сomplication.Controls.Add(this.punctuation);
+            this.Сomplication.Controls.Add(this.numb);
+            this.Сomplication.Controls.Add(this.bigLett);
+            this.Сomplication.Controls.Add(this.smallLett);
+            this.Сomplication.Location = new System.Drawing.Point(327, 56);
+            this.Сomplication.Name = "Сomplication";
+            this.Сomplication.Size = new System.Drawing.Size(198, 119);
+            this.Сomplication.TabIndex = 3;
+            this.Сomplication.TabStop = false;
+            this.Сomplication.Text = "Сложность";
             // 
-            // Punctuation
+            // punctuation
             // 
-            this.Punctuation.AutoSize = true;
-            this.Punctuation.Location = new System.Drawing.Point(6, 110);
-            this.Punctuation.Name = "Punctuation";
-            this.Punctuation.Size = new System.Drawing.Size(120, 17);
-            this.Punctuation.TabIndex = 4;
-            this.Punctuation.Text = "Знаки препинания";
-            this.Punctuation.UseVisualStyleBackColor = true;
+            this.punctuation.AutoSize = true;
+            this.punctuation.Location = new System.Drawing.Point(6, 90);
+            this.punctuation.Name = "punctuation";
+            this.punctuation.Size = new System.Drawing.Size(120, 17);
+            this.punctuation.TabIndex = 4;
+            this.punctuation.Text = "Знаки препинания";
+            this.punctuation.UseVisualStyleBackColor = true;
             // 
-            // HotKeys
+            // numb
             // 
-            this.HotKeys.AutoSize = true;
-            this.HotKeys.Location = new System.Drawing.Point(6, 88);
-            this.HotKeys.Name = "HotKeys";
-            this.HotKeys.Size = new System.Drawing.Size(120, 17);
-            this.HotKeys.TabIndex = 3;
-            this.HotKeys.Text = "Сочетания клавиш";
-            this.HotKeys.UseVisualStyleBackColor = true;
+            this.numb.AutoSize = true;
+            this.numb.Location = new System.Drawing.Point(6, 67);
+            this.numb.Name = "numb";
+            this.numb.Size = new System.Drawing.Size(62, 17);
+            this.numb.TabIndex = 2;
+            this.numb.Text = "Цифры";
+            this.numb.UseVisualStyleBackColor = true;
             // 
-            // Numb
+            // bigLett
             // 
-            this.Numb.AutoSize = true;
-            this.Numb.Location = new System.Drawing.Point(6, 65);
-            this.Numb.Name = "Numb";
-            this.Numb.Size = new System.Drawing.Size(62, 17);
-            this.Numb.TabIndex = 2;
-            this.Numb.Text = "Цифры";
-            this.Numb.UseVisualStyleBackColor = true;
-            // 
-            // BigLett
-            // 
-            this.BigLett.AutoSize = true;
-            this.BigLett.Location = new System.Drawing.Point(6, 42);
-            this.BigLett.Name = "BigLett";
-            this.BigLett.Size = new System.Drawing.Size(118, 17);
-            this.BigLett.TabIndex = 1;
-            this.BigLett.Text = "Прописные буквы";
-            this.BigLett.UseVisualStyleBackColor = true;
+            this.bigLett.AutoSize = true;
+            this.bigLett.Location = new System.Drawing.Point(6, 44);
+            this.bigLett.Name = "bigLett";
+            this.bigLett.Size = new System.Drawing.Size(116, 17);
+            this.bigLett.TabIndex = 1;
+            this.bigLett.Text = "Заглавные буквы";
+            this.bigLett.UseVisualStyleBackColor = true;
             // 
             // smallLett
             // 
             this.smallLett.AutoSize = true;
-            this.smallLett.Location = new System.Drawing.Point(6, 20);
+            this.smallLett.Location = new System.Drawing.Point(6, 21);
             this.smallLett.Name = "smallLett";
             this.smallLett.Size = new System.Drawing.Size(109, 17);
             this.smallLett.TabIndex = 0;
@@ -189,9 +177,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 166);
+            this.button1.Location = new System.Drawing.Point(12, 142);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(120, 23);
+            this.button1.Size = new System.Drawing.Size(120, 33);
             this.button1.TabIndex = 4;
             this.button1.Text = "Start";
             this.button1.UseVisualStyleBackColor = true;
@@ -201,19 +189,19 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(537, 201);
+            this.ClientSize = new System.Drawing.Size(537, 189);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.Сomplication);
+            this.Controls.Add(this.Mode);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Name = "Start_Form";
             this.Text = "FireKeyboardSimulator";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.Mode.ResumeLayout(false);
+            this.Mode.PerformLayout();
+            this.Сomplication.ResumeLayout(false);
+            this.Сomplication.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -222,16 +210,15 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox Mode;
         private System.Windows.Forms.RadioButton EndlessButton;
         private System.Windows.Forms.RadioButton ScoreButton;
         private System.Windows.Forms.RadioButton SpeedUpButton;
         private System.Windows.Forms.RadioButton LearnButton;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.CheckBox Punctuation;
-        private System.Windows.Forms.CheckBox HotKeys;
-        private System.Windows.Forms.CheckBox Numb;
-        private System.Windows.Forms.CheckBox BigLett;
+        private System.Windows.Forms.GroupBox Сomplication;
+        private System.Windows.Forms.CheckBox punctuation;
+        private System.Windows.Forms.CheckBox numb;
+        private System.Windows.Forms.CheckBox bigLett;
         private System.Windows.Forms.CheckBox smallLett;
         private System.Windows.Forms.Button button1;
     }

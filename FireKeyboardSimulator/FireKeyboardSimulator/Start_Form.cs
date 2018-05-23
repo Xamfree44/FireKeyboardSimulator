@@ -17,6 +17,7 @@ namespace FireKeyboardSimulator
         Form2 f_2;
         Form3 f_3;
         Form4 f_4;
+
         public Start_Form()
         {
             InitializeComponent();
@@ -25,10 +26,9 @@ namespace FireKeyboardSimulator
         private void button1_Click(object sender, EventArgs e)
         {
             if (smallLett.Checked) data += "a";
-            if (BigLett.Checked) data += "A";
-            if (Numb.Checked) data += "1";
-            if (HotKeys.Checked) data += "H";
-            if (Punctuation.Checked) data += "P";
+            if (bigLett.Checked) data += "A";
+            if (numb.Checked) data += "1";
+            if (punctuation.Checked) data += "-";
 
             for (; data.Length < 6;) data += "U";
 
@@ -52,6 +52,7 @@ namespace FireKeyboardSimulator
                 Form4 f_4 = new Form4(data);
                 f_4.Show();
             }
+            data = "";
         }
     }
 }

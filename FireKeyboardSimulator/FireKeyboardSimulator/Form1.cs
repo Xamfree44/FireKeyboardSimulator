@@ -13,36 +13,44 @@ namespace FireKeyboardSimulator
     public partial class Form1 : Form
     {
         Random rnd = new Random();
+
         private void GroundMechanics(string input)
         {
-            bool smallLett = false, bigLett = false, numb = false;
-            bool hotKeys = false, punktuation = false;
+            bool smallLett = false, bigLett = false, numb = false, punctuation = false;
             string alphabet = "";
             int chooser = 0;
 
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < 4; i++)
             {
                 if (input[i] == 'a') smallLett = true;
                 if (input[i] == 'A') bigLett = true;
                 if (input[i] == '1') numb = true;
-                if (input[i] == 'H') hotKeys = true;
-                if (input[i] == 'P') punktuation = true;
+                if (input[i] == '-') punctuation = true;
             }
 
             if (smallLett) alphabet += "qwertyuiopasdfghjklzxcvbnm";
             if (bigLett) alphabet += "QWERTYUIOPASDFGHJKLZXCVBNM";
             if (numb) alphabet += "1234567890";
-            if (punktuation) alphabet += "[]{};:'<>,./";
+            if (punctuation) alphabet += "<>,.-+";
 
             chooser = rnd.Next(alphabet.Length);
-            label2.Text = chooser.ToString();
-            label1.Text += alphabet[chooser].ToString();
-
+            if (alphabet.Length > 0)
+            {
+                label1.Text += alphabet[chooser].ToString();
+            }
+            else
+            {
+                timer_Form1.Enabled = false;
+                MessageBox.Show("Вы не выбрали сложность!");
+                Application.Exit();
+            }
         }
+
         string data;
         public Form1(string data)
         {
             InitializeComponent();
+            timer_Form1.Interval = 1000;
             this.data = data;
 
             button1.Enabled = false;
@@ -92,6 +100,11 @@ namespace FireKeyboardSimulator
             button45.Enabled = false;
             button46.Enabled = false;
             button47.Enabled = false;
+            button48.Enabled = false;
+            button49.Enabled = false;
+            button50.Enabled = false;
+            button51.Enabled = false;
+            button52.Enabled = false;
 
             label1.BackColor = Color.White;
 
@@ -103,6 +116,8 @@ namespace FireKeyboardSimulator
             button43.BackColor = Color.MediumPurple;
             button44.BackColor = Color.MediumPurple;
             button47.BackColor = Color.MediumPurple;
+            button48.BackColor = Color.MediumPurple;
+            button49.BackColor = Color.MediumPurple;
 
             button2.BackColor = Color.MediumSeaGreen; // Green Buttons
             button11.BackColor = Color.MediumSeaGreen;
@@ -115,6 +130,8 @@ namespace FireKeyboardSimulator
             button10.BackColor = Color.MediumSeaGreen;
             button45.BackColor = Color.MediumSeaGreen;
             button46.BackColor = Color.MediumSeaGreen;
+            button50.BackColor = Color.MediumSeaGreen;
+            button51.BackColor = Color.MediumSeaGreen;
 
             button3.BackColor = Color.RoyalBlue; // Blue Buttons
             button4.BackColor = Color.RoyalBlue;
@@ -125,6 +142,7 @@ namespace FireKeyboardSimulator
             button21.BackColor = Color.RoyalBlue;
             button31.BackColor = Color.RoyalBlue;
             button40.BackColor = Color.RoyalBlue;
+            button52.BackColor = Color.RoyalBlue;
 
             button5.BackColor = Color.IndianRed; // Red Buttons
             button6.BackColor = Color.IndianRed;
@@ -150,6 +168,25 @@ namespace FireKeyboardSimulator
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
+            if (e.KeyCode == Keys.Space)
+            {
+                button52.Enabled = true;
+                button52.BackColor = Color.CornflowerBlue;
+            }
+            if (e.Modifiers == Keys.Alt)
+            {
+                button50.Enabled = true;
+                button51.Enabled = true;
+                button50.BackColor = Color.SeaGreen;
+                button51.BackColor = Color.SeaGreen;
+            }
+            if (e.Modifiers == Keys.Control)
+            {
+                button48.Enabled = true;
+                button49.Enabled = true;
+                button48.BackColor = Color.MediumSlateBlue;
+                button49.BackColor = Color.MediumSlateBlue;
+            }
             if (e.KeyCode == Keys.D1)
             {
                 button1.Enabled = true;
@@ -389,6 +426,25 @@ namespace FireKeyboardSimulator
 
         private void Form1_KeyUp(object sender, KeyEventArgs e)
         {
+            if (e.KeyCode == Keys.Space)
+            {
+                button52.Enabled = false;
+                button52.BackColor = Color.RoyalBlue;
+            }
+            if (e.Modifiers == Keys.Alt)
+            {
+                button50.Enabled = false;
+                button51.Enabled = false;
+                button50.BackColor = Color.MediumSeaGreen;
+                button51.BackColor = Color.MediumSeaGreen;
+            }
+            if (e.Modifiers == Keys.Control)
+            {
+                button48.Enabled = false;
+                button49.Enabled = false;
+                button48.BackColor = Color.MediumPurple;
+                button49.BackColor = Color.MediumPurple;
+            }
             if (e.KeyCode == Keys.D1)
             {
                 button1.Enabled = false;
