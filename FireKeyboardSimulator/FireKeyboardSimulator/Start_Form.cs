@@ -13,10 +13,10 @@ namespace FireKeyboardSimulator
     public partial class Start_Form : Form
     {
         static string data = "";
-        Form1 f_1;
-        Form2 f_2;
-        Form3 f_3;
-        Form4 f_4;
+        Training f_1;
+        Advanced f_2;
+        Highscore f_3;
+        Endless f_4;
 
         public Start_Form()
         {
@@ -34,22 +34,22 @@ namespace FireKeyboardSimulator
 
             if (LearnButton.Checked)
             {
-                Form1 f_1 = new Form1(data);
+                Training f_1 = new Training(data);
                 f_1.Show();
             }
             if (SpeedUpButton.Checked)
             {
-                Form2 f_2 = new Form2(data);
+                Advanced f_2 = new Advanced(data);
                 f_2.Show();
             }
             if (ScoreButton.Checked)
             {
-                Form3 f_3 = new Form3(data);
+                Highscore f_3 = new Highscore(data);
                 f_3.Show();
             }
             if (EndlessButton.Checked)
             {
-                Form4 f_4 = new Form4(data);
+                Endless f_4 = new Endless(data);
                 f_4.Show();
             }
             data = "";
