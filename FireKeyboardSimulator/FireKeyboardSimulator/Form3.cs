@@ -52,6 +52,7 @@ namespace FireKeyboardSimulator
                     rec = press;
                     timer1_Form3.Enabled = false;
                     MessageBox.Show("Вы проиграли!\n\n" +
+                        "Всего нажатий: " + press + "\n" +
                         "Ваш рекорд: " + rec + "\n\n"
                         );
                     this.Hide();
@@ -61,6 +62,7 @@ namespace FireKeyboardSimulator
                 {
                     timer1_Form3.Enabled = false;
                     MessageBox.Show("Вы проиграли!\n\n" +
+                        "Всего нажатий: " + press + "\n" +
                         "Ваш рекорд: " + rec + "\n\n"
                         );
                     this.Hide();
@@ -723,6 +725,7 @@ namespace FireKeyboardSimulator
                     rec = press;
                     timer1_Form3.Enabled = false;
                     MessageBox.Show("Вы выиграли!\n\n" +
+                        "Всего нажатий: " + press + "\n" +
                         "Ваш рекорд: " + rec + "\n\n"
                         );
                     this.Hide();
@@ -732,6 +735,7 @@ namespace FireKeyboardSimulator
                 {
                     timer1_Form3.Enabled = false;
                     MessageBox.Show("Вы выиграли!\n\n" +
+                        "Всего нажатий: " + press + "\n" +
                         "Ваш рекорд: " + rec + "\n\n"
                         );
                     this.Hide();
@@ -745,6 +749,7 @@ namespace FireKeyboardSimulator
                     rec = press;
                     timer1_Form3.Enabled = false;
                     MessageBox.Show("Вы проиграли!\n\n" +
+                        "Всего нажатий: " + press + "\n" +
                         "Ваш рекорд: " + rec + "\n\n"
                         );
                     this.Hide();
@@ -754,6 +759,7 @@ namespace FireKeyboardSimulator
                 {
                     timer1_Form3.Enabled = false;
                     MessageBox.Show("Вы проиграли!\n\n" +
+                        "Всего нажатий: " + press + "\n" +
                         "Ваш рекорд: " + rec + "\n\n"
                         );
                     this.Hide();
