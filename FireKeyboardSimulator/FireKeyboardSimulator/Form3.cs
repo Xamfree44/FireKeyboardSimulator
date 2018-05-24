@@ -40,9 +40,32 @@ namespace FireKeyboardSimulator
             }
             else
             {
-                timer_Form3.Enabled = false;
+                timer1_Form3.Enabled = false;
                 MessageBox.Show("Вы не выбрали сложность!");
                 this.Hide();
+            }
+
+            if (label1.Text.Length > 25)
+            {
+                if (press > rec)
+                {
+                    rec = press;
+                    timer1_Form3.Enabled = false;
+                    MessageBox.Show("Вы проиграли!\n\n" +
+                        "Ваш рекорд: " + rec + "\n\n"
+                        );
+                    this.Hide();
+                    press = 0;
+                }
+                else
+                {
+                    timer1_Form3.Enabled = false;
+                    MessageBox.Show("Вы проиграли!\n\n" +
+                        "Ваш рекорд: " + rec + "\n\n"
+                        );
+                    this.Hide();
+                    press = 0;
+                }
             }
         }
 
@@ -50,7 +73,7 @@ namespace FireKeyboardSimulator
         public Form3(string data)
         {
             InitializeComponent();
-            timer_Form3.Interval = 1000;
+            timer1_Form3.Interval = 600;
             this.data = data;
 
             button1.Enabled = false;
@@ -682,17 +705,64 @@ namespace FireKeyboardSimulator
             }
         }
 
+        static int press, rec = press;
         private void Form3_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (label1.Text[0] == e.KeyChar)
             {
                 label1.Text = label1.Text.Remove(0, 1);
                 label1.ForeColor = Color.Green;
+                press++;
             }
             else label1.ForeColor = Color.Red;
+
+            if (label1.Text.Length <= 0)
+            {
+                if (press > rec)
+                {
+                    rec = press;
+                    timer1_Form3.Enabled = false;
+                    MessageBox.Show("Вы выиграли!\n\n" +
+                        "Ваш рекорд: " + rec + "\n\n"
+                        );
+                    this.Hide();
+                    press = 0;
+                }
+                else
+                {
+                    timer1_Form3.Enabled = false;
+                    MessageBox.Show("Вы выиграли!\n\n" +
+                        "Ваш рекорд: " + rec + "\n\n"
+                        );
+                    this.Hide();
+                    press = 0;
+                }
+            }
+            else if (label1.Text.Length > 25)
+            {
+                if (press > rec)
+                {
+                    rec = press;
+                    timer1_Form3.Enabled = false;
+                    MessageBox.Show("Вы проиграли!\n\n" +
+                        "Ваш рекорд: " + rec + "\n\n"
+                        );
+                    this.Hide();
+                    press = 0;
+                }
+                else
+                {
+                    timer1_Form3.Enabled = false;
+                    MessageBox.Show("Вы проиграли!\n\n" +
+                        "Ваш рекорд: " + rec + "\n\n"
+                        );
+                    this.Hide();
+                    press = 0;
+                }
+            }
         }
 
-        private void timer_Form3_Tick(object sender, EventArgs e)
+        private void timer1_Form3_Tick(object sender, EventArgs e)
         {
             GroundMechanics(data);
         }

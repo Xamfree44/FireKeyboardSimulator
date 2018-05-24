@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -77,12 +78,13 @@
             this.button46 = new System.Windows.Forms.Button();
             this.button47 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.timer_Form2 = new System.Windows.Forms.Timer(this.components);
+            this.timer1_Form2 = new System.Windows.Forms.Timer(this.components);
             this.button48 = new System.Windows.Forms.Button();
             this.button49 = new System.Windows.Forms.Button();
             this.button50 = new System.Windows.Forms.Button();
             this.button51 = new System.Windows.Forms.Button();
             this.button52 = new System.Windows.Forms.Button();
+            this.timer2_Form2 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // button1
@@ -517,10 +519,11 @@
             this.label1.TabIndex = 47;
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // timer_Form2
+            // timer1_Form2
             // 
-            this.timer_Form2.Enabled = true;
-            this.timer_Form2.Tick += new System.EventHandler(this.timer_Form2_Tick);
+            this.timer1_Form2.Enabled = true;
+            this.timer1_Form2.Interval = 1000;
+            this.timer1_Form2.Tick += new System.EventHandler(this.timer1_Form2_Tick);
             // 
             // button48
             // 
@@ -565,6 +568,12 @@
             this.button52.Size = new System.Drawing.Size(367, 45);
             this.button52.TabIndex = 53;
             this.button52.UseVisualStyleBackColor = true;
+            // 
+            // timer2_Form2
+            // 
+            this.timer2_Form2.Enabled = true;
+            this.timer2_Form2.Interval = 1000;
+            this.timer2_Form2.Tick += new System.EventHandler(this.timer2_Form2_Tick);
             // 
             // Form2
             // 
@@ -626,10 +635,11 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "2";
+            this.Text = "Advanced";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Form2_KeyPress);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
@@ -687,12 +697,13 @@
         private System.Windows.Forms.Button button46;
         private System.Windows.Forms.Button button47;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Timer timer_Form2;
+        private System.Windows.Forms.Timer timer1_Form2;
         private System.Windows.Forms.Button button48;
         private System.Windows.Forms.Button button49;
         private System.Windows.Forms.Button button50;
         private System.Windows.Forms.Button button51;
         private System.Windows.Forms.Button button52;
+        private System.Windows.Forms.Timer timer2_Form2;
     }
 }
 

@@ -116,13 +116,14 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="лого_финал1.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="лого_финал2.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\keyboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.ico" />
+    <Content Include="лого_финал1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

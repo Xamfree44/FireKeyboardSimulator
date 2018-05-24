@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -77,7 +78,7 @@
             this.button46 = new System.Windows.Forms.Button();
             this.button47 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.timer_Form3 = new System.Windows.Forms.Timer(this.components);
+            this.timer1_Form3 = new System.Windows.Forms.Timer(this.components);
             this.button48 = new System.Windows.Forms.Button();
             this.button49 = new System.Windows.Forms.Button();
             this.button50 = new System.Windows.Forms.Button();
@@ -517,10 +518,10 @@
             this.label1.TabIndex = 47;
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // timer_Form3
+            // timer1_Form3
             // 
-            this.timer_Form3.Enabled = true;
-            this.timer_Form3.Tick += new System.EventHandler(this.timer_Form3_Tick);
+            this.timer1_Form3.Enabled = true;
+            this.timer1_Form3.Tick += new System.EventHandler(this.timer1_Form3_Tick);
             // 
             // button48
             // 
@@ -626,10 +627,11 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.Name = "Form3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "3";
+            this.Text = "Highscore";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Form3_KeyPress);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
@@ -687,7 +689,7 @@
         private System.Windows.Forms.Button button46;
         private System.Windows.Forms.Button button47;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Timer timer_Form3;
+        private System.Windows.Forms.Timer timer1_Form3;
         private System.Windows.Forms.Button button48;
         private System.Windows.Forms.Button button49;
         private System.Windows.Forms.Button button50;

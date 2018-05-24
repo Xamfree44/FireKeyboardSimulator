@@ -40,8 +40,22 @@ namespace FireKeyboardSimulator
             }
             else
             {
-                timer_Form2.Enabled = false;
-                MessageBox.Show("Вы не выбрали сложность!");
+                timer1_Form2.Enabled = false;
+                timer2_Form2.Enabled = false;
+                MessageBox.Show("Вы не выбрали сложность!\n");
+                this.Hide();
+            }
+
+            if (label1.Text.Length > 25)
+            {
+                timer1_Form2.Enabled = false;
+                timer2_Form2.Enabled = false;
+                MessageBox.Show("Вы проиграли!\n\n" +
+                    "Всего нажатий: " + all_i + "\n" +
+                    "Правильных нажатий: " + true_i + "\n" +
+                    "Неправильных нажатий: " + false_i + "\n" +
+                    "Процент правильных нажатий: " + (true_i * 100) / all_i + "%\n\n"
+                    );
                 this.Hide();
             }
         }
@@ -50,7 +64,8 @@ namespace FireKeyboardSimulator
         public Form2(string data)
         {
             InitializeComponent();
-            timer_Form2.Interval = 1000;
+            timer1_Form2.Interval = 1000;
+            timer2_Form2.Interval = 1000;
             this.data = data;
 
             button1.Enabled = false;
@@ -682,19 +697,62 @@ namespace FireKeyboardSimulator
             }
         }
 
-        private void timer_Form2_Tick(object sender, EventArgs e)
+        private void timer1_Form2_Tick(object sender, EventArgs e)
         {
             GroundMechanics(data);
         }
 
+        static int time = 0;
+        private void timer2_Form2_Tick(object sender, EventArgs e)
+        {
+            time++;
+            if (time > 4)
+            {
+                timer1_Form2.Interval -= ((timer1_Form2.Interval * 15) / 100);
+                time = 0;
+            }
+        }
+
+        static int true_i = 0, false_i = 0, all_i = 0;
         private void Form2_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (label1.Text[0] == e.KeyChar)
             {
                 label1.Text = label1.Text.Remove(0, 1);
                 label1.ForeColor = Color.Green;
+                true_i++;
             }
-            else label1.ForeColor = Color.Red;
+            else
+            {
+                label1.ForeColor = Color.Red;
+                false_i++;
+            }
+            all_i++;
+
+            if (label1.Text.Length <= 0)
+            {
+                timer1_Form2.Enabled = false;
+                timer2_Form2.Enabled = false;
+                MessageBox.Show("Вы выиграли!\n\n" +
+                    "Всего нажатий: " + all_i + "\n" +
+                    "Правильных нажатий: " + true_i + "\n" +
+                    "Неправильных нажатий: " + false_i + "\n" +
+                    "Процент правильных нажатий: " + (true_i * 100) / all_i + "%\n\n"
+                    );
+                this.Hide();
+            }
+            else if (label1.Text.Length > 25)
+            {
+                timer1_Form2.Enabled = false;
+                timer2_Form2.Enabled = false;
+                MessageBox.Show("Вы проиграли!\n\n" +
+                    "Всего нажатий: " + all_i + "\n" +
+                    "Правильных нажатий: " + true_i + "\n" +
+                    "Неправильных нажатий: " + false_i + "\n" +
+                    "Процент правильных нажатий: " + (true_i * 100) / all_i + "%\n\n"
+                    );
+                this.Hide();
+            }
         }
     }
 }

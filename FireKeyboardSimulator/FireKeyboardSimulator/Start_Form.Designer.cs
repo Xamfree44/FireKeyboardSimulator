@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Start_Form));
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Mode = new System.Windows.Forms.GroupBox();
             this.EndlessButton = new System.Windows.Forms.RadioButton();
             this.ScoreButton = new System.Windows.Forms.RadioButton();
@@ -41,9 +41,10 @@
             this.bigLett = new System.Windows.Forms.CheckBox();
             this.smallLett = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Mode.SuspendLayout();
             this.Сomplication.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -54,16 +55,6 @@
             this.label1.Size = new System.Drawing.Size(387, 44);
             this.label1.TabIndex = 0;
             this.label1.Text = "Fire Keyboard Simulator";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::FireKeyboardSimulator.Properties.Resources.лого_финал2;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 9);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(120, 106);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // Mode
             // 
@@ -185,6 +176,16 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::FireKeyboardSimulator.Properties.Resources.лого_финал2;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 9);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(120, 106);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // Start_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -195,13 +196,14 @@
             this.Controls.Add(this.Mode);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Start_Form";
             this.Text = "FireKeyboardSimulator";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.Mode.ResumeLayout(false);
             this.Mode.PerformLayout();
             this.Сomplication.ResumeLayout(false);
             this.Сomplication.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
