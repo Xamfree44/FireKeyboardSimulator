@@ -180,7 +180,7 @@
             // 
             this.pictureBox1.BackgroundImage = global::FireKeyboardSimulator.Properties.Resources.лого_финал2;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 9);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(120, 106);
             this.pictureBox1.TabIndex = 1;
@@ -190,7 +190,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(537, 189);
+            this.ClientSize = new System.Drawing.Size(537, 187);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Сomplication);
             this.Controls.Add(this.Mode);

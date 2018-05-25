@@ -123,6 +123,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\logo.ico" />
+    <None Include="Resources\fire.ico" />
     <Content Include="лого_финал1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

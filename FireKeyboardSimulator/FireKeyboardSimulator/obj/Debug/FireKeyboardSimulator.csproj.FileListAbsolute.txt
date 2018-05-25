@@ -26,7 +26,6 @@ C:\Users\emil\Desktop\FireKeyboardSimulator\FireKeyboardSimulator\obj\Debug\Fire
 C:\Users\emil\Desktop\FireKeyboardSimulator\FireKeyboardSimulator\obj\Debug\FireKeyboardSimulator.csproj.CoreCompileInputs.cache
 C:\Users\emil\Desktop\FireKeyboardSimulator\FireKeyboardSimulator\obj\Debug\FireKeyboardSimulator.exe
 C:\Users\emil\Desktop\FireKeyboardSimulator\FireKeyboardSimulator\obj\Debug\FireKeyboardSimulator.pdb
-C:\Users\emil\Desktop\FireKeyboardSimulator\FireKeyboardSimulator\obj\Debug\FireKeyboardSimulator.Form1.resources
 C:\Users\emil\Desktop\FireKeyboardSimulator\FireKeyboardSimulator\bin\Debug\FireKeyboardSimulator.exe.config
 C:\Users\emil\Desktop\FireKeyboardSimulator\FireKeyboardSimulator\bin\Debug\FireKeyboardSimulator.exe
 C:\Users\emil\Desktop\FireKeyboardSimulator\FireKeyboardSimulator\bin\Debug\FireKeyboardSimulator.pdb
@@ -76,3 +75,7 @@ C:\Users\user\Documents\Visual Studio 2017\Projects\FireKeyboardSimulator\FireKe
 C:\Users\user\Documents\Visual Studio 2017\Projects\FireKeyboardSimulator\FireKeyboardSimulator\obj\Debug\FireKeyboardSimulator.Advanced.resources
 C:\Users\user\Documents\Visual Studio 2017\Projects\FireKeyboardSimulator\FireKeyboardSimulator\obj\Debug\FireKeyboardSimulator.Highscore.resources
 C:\Users\user\Documents\Visual Studio 2017\Projects\FireKeyboardSimulator\FireKeyboardSimulator\obj\Debug\FireKeyboardSimulator.Endless.resources
+C:\Users\emil\Desktop\FireKeyboardSimulator\FireKeyboardSimulator\obj\Debug\FireKeyboardSimulator.Training.resources
+C:\Users\emil\Desktop\FireKeyboardSimulator\FireKeyboardSimulator\obj\Debug\FireKeyboardSimulator.Advanced.resources
+C:\Users\emil\Desktop\FireKeyboardSimulator\FireKeyboardSimulator\obj\Debug\FireKeyboardSimulator.Highscore.resources
+C:\Users\emil\Desktop\FireKeyboardSimulator\FireKeyboardSimulator\obj\Debug\FireKeyboardSimulator.Endless.resources

@@ -31,9 +31,7 @@ namespace FireKeyboardSimulator
             if (smallLett) alphabet += "qwertyuiopasdfghjklzxcvbnm";
             if (bigLett) alphabet += "QWERTYUIOPASDFGHJKLZXCVBNM";
             if (numb) alphabet += "1234567890";
-            if (punctuation) alphabet += "<>,.-+";
-
-            alphabet += " ";
+            if (punctuation) alphabet += "<>,.-+" + " ";
 
             chooser = rnd.Next(alphabet.Length);
             if (alphabet.Length > 1)
@@ -54,8 +52,8 @@ namespace FireKeyboardSimulator
                     rec = press;
                     timer1_Form3.Enabled = false;
                     MessageBox.Show("Вы проиграли!\n\n" +
-                        "Всего нажатий: " + press + "\n" +
-                        "Ваш рекорд: " + rec + "\n\n"
+                        "Ваш счет: " + press + "\n" +
+                        "Рекорд: " + rec + "\n\n"
                         );
                     this.Hide();
                     press = 0;
@@ -64,8 +62,8 @@ namespace FireKeyboardSimulator
                 {
                     timer1_Form3.Enabled = false;
                     MessageBox.Show("Вы проиграли!\n\n" +
-                        "Всего нажатий: " + press + "\n" +
-                        "Ваш рекорд: " + rec + "\n\n"
+                        "Ваш счет: " + press + "\n" +
+                        "Рекорд: " + rec + "\n\n"
                         );
                     this.Hide();
                     press = 0;
@@ -727,8 +725,8 @@ namespace FireKeyboardSimulator
                     rec = press;
                     timer1_Form3.Enabled = false;
                     MessageBox.Show("Вы выиграли!\n\n" +
-                        "Всего нажатий: " + press + "\n" +
-                        "Ваш рекорд: " + rec + "\n\n"
+                        "Ваш счет: " + press + "\n" +
+                        "Рекорд: " + rec + "\n\n"
                         );
                     this.Hide();
                     press = 0;
@@ -737,8 +735,8 @@ namespace FireKeyboardSimulator
                 {
                     timer1_Form3.Enabled = false;
                     MessageBox.Show("Вы выиграли!\n\n" +
-                        "Всего нажатий: " + press + "\n" +
-                        "Ваш рекорд: " + rec + "\n\n"
+                        "Ваш счет: " + press + "\n" +
+                        "Рекорд: " + rec + "\n\n"
                         );
                     this.Hide();
                     press = 0;
@@ -751,8 +749,8 @@ namespace FireKeyboardSimulator
                     rec = press;
                     timer1_Form3.Enabled = false;
                     MessageBox.Show("Вы проиграли!\n\n" +
-                        "Всего нажатий: " + press + "\n" +
-                        "Ваш рекорд: " + rec + "\n\n"
+                        "Ваш счет: " + press + "\n" +
+                        "Рекорд: " + rec + "\n\n"
                         );
                     this.Hide();
                     press = 0;
@@ -761,8 +759,8 @@ namespace FireKeyboardSimulator
                 {
                     timer1_Form3.Enabled = false;
                     MessageBox.Show("Вы проиграли!\n\n" +
-                        "Всего нажатий: " + press + "\n" +
-                        "Ваш рекорд: " + rec + "\n\n"
+                        "Ваш счет: " + press + "\n" +
+                        "Рекорд: " + rec + "\n\n"
                         );
                     this.Hide();
                     press = 0;

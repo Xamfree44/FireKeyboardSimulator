@@ -31,9 +31,7 @@ namespace FireKeyboardSimulator
             if (smallLett) alphabet += "qwertyuiopasdfghjklzxcvbnm";
             if (bigLett) alphabet += "QWERTYUIOPASDFGHJKLZXCVBNM";
             if (numb) alphabet += "1234567890";
-            if (punctuation) alphabet += "<>,.-+";
-
-            alphabet += " ";
+            if (punctuation) alphabet += "<>,.-+" + " ";
 
             chooser = rnd.Next(alphabet.Length);
             if (alphabet.Length > 1)
