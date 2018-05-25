@@ -33,7 +33,9 @@ namespace FireKeyboardSimulator
             if (numb) alphabet += "1234567890";
             if (punctuation) alphabet += "<>,.-+";
 
-            if (alphabet.Length > 0)
+            alphabet += " ";
+
+            if (alphabet.Length > 1)
             {
                 for (int i = 0; i < length; i++)
                 {

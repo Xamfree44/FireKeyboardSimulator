@@ -33,8 +33,10 @@ namespace FireKeyboardSimulator
             if (numb) alphabet += "1234567890";
             if (punctuation) alphabet += "<>,.-+";
 
+            alphabet += " ";
+
             chooser = rnd.Next(alphabet.Length);
-            if (alphabet.Length > 0)
+            if (alphabet.Length > 1)
             {
                 label1.Text += alphabet[chooser].ToString();
             }

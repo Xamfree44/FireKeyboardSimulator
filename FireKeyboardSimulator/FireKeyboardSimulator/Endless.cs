@@ -33,8 +33,10 @@ namespace FireKeyboardSimulator
             if (numb) alphabet += "1234567890";
             if (punctuation) alphabet += "<>,.-+";
 
+            alphabet += " ";
+
             chooser = rnd.Next(alphabet.Length);
-            if (alphabet.Length > 0)
+            if (alphabet.Length > 1)
             {
                 label1.Text += alphabet[chooser].ToString();
             }
@@ -684,7 +686,8 @@ namespace FireKeyboardSimulator
 
         private void timer_Form4_Tick(object sender, EventArgs e)
         {
-            GroundMechanics(data);
+            if (label1.Text.Length < 30) GroundMechanics(data);
+            else;
         }
 
         private void Form4_KeyPress(object sender, KeyPressEventArgs e)
