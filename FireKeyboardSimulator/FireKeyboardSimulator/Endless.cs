@@ -686,18 +686,23 @@ namespace FireKeyboardSimulator
 
         private void timer_Form4_Tick(object sender, EventArgs e)
         {
+            if (label1.Text.Length <= 0) timer_Form4.Interval -= 100;
             if (label1.Text.Length < 30) GroundMechanics(data);
             else;
         }
 
         private void Form4_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (label1.Text[0] == e.KeyChar)
+            if (label1.Text.Length == 0) ;
+            else
             {
-                label1.Text = label1.Text.Remove(0, 1);
-                label1.ForeColor = Color.Green;
+                if (label1.Text[0] == e.KeyChar)
+                {
+                    label1.Text = label1.Text.Remove(0, 1);
+                    label1.ForeColor = Color.Green;
+                }
+                else label1.ForeColor = Color.Red;
             }
-            else label1.ForeColor = Color.Red;
         }
     }
 }
