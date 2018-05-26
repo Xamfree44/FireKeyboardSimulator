@@ -51,7 +51,7 @@ namespace FireKeyboardSimulator
                 {
                     rec = press;
                     timer1_Form3.Enabled = false;
-                    MessageBox.Show("Вы проиграли!\n\n" +
+                    MessageBox.Show(
                         "Ваш счет: " + press + "\n" +
                         "Рекорд: " + rec + "\n\n"
                         );
@@ -61,7 +61,7 @@ namespace FireKeyboardSimulator
                 else
                 {
                     timer1_Form3.Enabled = false;
-                    MessageBox.Show("Вы проиграли!\n\n" +
+                    MessageBox.Show(
                         "Ваш счет: " + press + "\n" +
                         "Рекорд: " + rec + "\n\n"
                         );
@@ -724,7 +724,7 @@ namespace FireKeyboardSimulator
                 {
                     rec = press;
                     timer1_Form3.Enabled = false;
-                    MessageBox.Show("Вы выиграли!\n\n" +
+                    MessageBox.Show(
                         "Ваш счет: " + press + "\n" +
                         "Рекорд: " + rec + "\n\n"
                         );
@@ -734,7 +734,7 @@ namespace FireKeyboardSimulator
                 else
                 {
                     timer1_Form3.Enabled = false;
-                    MessageBox.Show("Вы выиграли!\n\n" +
+                    MessageBox.Show(
                         "Ваш счет: " + press + "\n" +
                         "Рекорд: " + rec + "\n\n"
                         );
@@ -748,7 +748,7 @@ namespace FireKeyboardSimulator
                 {
                     rec = press;
                     timer1_Form3.Enabled = false;
-                    MessageBox.Show("Вы проиграли!\n\n" +
+                    MessageBox.Show(
                         "Ваш счет: " + press + "\n" +
                         "Рекорд: " + rec + "\n\n"
                         );
@@ -758,7 +758,7 @@ namespace FireKeyboardSimulator
                 else
                 {
                     timer1_Form3.Enabled = false;
-                    MessageBox.Show("Вы проиграли!\n\n" +
+                    MessageBox.Show(
                         "Ваш счет: " + press + "\n" +
                         "Рекорд: " + rec + "\n\n"
                         );
