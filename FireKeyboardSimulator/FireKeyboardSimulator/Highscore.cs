@@ -44,31 +44,6 @@ namespace FireKeyboardSimulator
                 MessageBox.Show("Вы не выбрали сложность!");
                 this.Hide();
             }
-
-            if (label1.Text.Length > 25)
-            {
-                if (press > rec)
-                {
-                    rec = press;
-                    timer1_Form3.Enabled = false;
-                    MessageBox.Show(
-                        "Ваш счет: " + press + "\n" +
-                        "Рекорд: " + rec + "\n\n"
-                        );
-                    this.Hide();
-                    press = 0;
-                }
-                else
-                {
-                    timer1_Form3.Enabled = false;
-                    MessageBox.Show(
-                        "Ваш счет: " + press + "\n" +
-                        "Рекорд: " + rec + "\n\n"
-                        );
-                    this.Hide();
-                    press = 0;
-                }
-            }
         }
 
         string data;
@@ -76,6 +51,7 @@ namespace FireKeyboardSimulator
         {
             InitializeComponent();
             timer1_Form3.Interval = 600;
+            timer2_Form3.Interval = 1000;
             this.data = data;
 
             button1.Enabled = false;
@@ -132,6 +108,9 @@ namespace FireKeyboardSimulator
             button52.Enabled = false;
 
             label1.BackColor = Color.White;
+            label2.BackColor = Color.White;
+            label3.BackColor = Color.White;
+            label4.BackColor = Color.White;
 
             button1.BackColor = Color.MediumPurple;   // Purple Buttons
             button12.BackColor = Color.MediumPurple;
@@ -710,67 +689,81 @@ namespace FireKeyboardSimulator
         static int press, rec = press;
         private void Form3_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (label1.Text[0] == e.KeyChar)
+            if (label1.Text.Length == 0)
             {
-                label1.Text = label1.Text.Remove(0, 1);
-                label1.ForeColor = Color.Green;
-                press++;
+                ;
             }
-            else label1.ForeColor = Color.Red;
+            else
+            {
+                if (label1.Text[0] == e.KeyChar)
+                {
+                    label1.Text = label1.Text.Remove(0, 1);
+                    label1.ForeColor = Color.Green;
+                    press++;
+                }
+                else label1.ForeColor = Color.Red;
+            }
+        }
 
-            if (label1.Text.Length <= 0)
+        static int minute = 1, seconds = 60;
+        private void timer2_Form3_Tick(object sender, EventArgs e)
+        {
+            minute--;
+            if (minute <= 0)
+            {
+                minute = 0;
+            }
+            seconds--;
+            if (seconds <= 0)
+            {
+                seconds = 0;
+            }
+            label4.Text = minute.ToString();
+            label3.Text = ":";
+            label2.Text = seconds.ToString();
+
+
+            if (minute == 0 && seconds == 0)
             {
                 if (press > rec)
                 {
                     rec = press;
                     timer1_Form3.Enabled = false;
+                    timer2_Form3.Enabled = false;
                     MessageBox.Show(
                         "Ваш счет: " + press + "\n" +
                         "Рекорд: " + rec + "\n\n"
                         );
                     this.Hide();
                     press = 0;
+                    minute = 1;
+                    seconds = 60;
                 }
                 else
                 {
                     timer1_Form3.Enabled = false;
+                    timer2_Form3.Enabled = false;
                     MessageBox.Show(
                         "Ваш счет: " + press + "\n" +
                         "Рекорд: " + rec + "\n\n"
                         );
                     this.Hide();
                     press = 0;
+                    minute = 1;
+                    seconds = 60;
                 }
             }
-            else if (label1.Text.Length > 25)
-            {
-                if (press > rec)
-                {
-                    rec = press;
-                    timer1_Form3.Enabled = false;
-                    MessageBox.Show(
-                        "Ваш счет: " + press + "\n" +
-                        "Рекорд: " + rec + "\n\n"
-                        );
-                    this.Hide();
-                    press = 0;
-                }
-                else
-                {
-                    timer1_Form3.Enabled = false;
-                    MessageBox.Show(
-                        "Ваш счет: " + press + "\n" +
-                        "Рекорд: " + rec + "\n\n"
-                        );
-                    this.Hide();
-                    press = 0;
-                }
-            }
+
         }
 
         private void timer1_Form3_Tick(object sender, EventArgs e)
         {
-            GroundMechanics(data);
+            if (label1.Text.Length <= 0) timer1_Form3.Interval = 600;
+            if (label1.Text.Length < 25) GroundMechanics(data);
+            else
+            {
+                ;
+            }
         }
     }
 }

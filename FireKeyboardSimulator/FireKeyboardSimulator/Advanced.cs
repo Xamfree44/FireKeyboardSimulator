@@ -57,6 +57,9 @@ namespace FireKeyboardSimulator
                     "Процент правильных нажатий: " + (true_i * 100) / all_i + "%\n\n"
                     );
                 this.Hide();
+                true_i = 0;
+                false_i = 0;
+                all_i = 0;
             }
         }
 
@@ -740,6 +743,9 @@ namespace FireKeyboardSimulator
                     "Процент правильных нажатий: " + (true_i * 100) / all_i + "%\n\n"
                     );
                 this.Hide();
+                true_i = 0;
+                false_i = 0;
+                all_i = 0;
             }
             else if (label1.Text.Length > 25)
             {
@@ -752,6 +758,9 @@ namespace FireKeyboardSimulator
                     "Процент правильных нажатий: " + (true_i * 100) / all_i + "%\n\n"
                     );
                 this.Hide();
+                true_i = 0;
+                false_i = 0;
+                all_i = 0;
             }
         }
     }

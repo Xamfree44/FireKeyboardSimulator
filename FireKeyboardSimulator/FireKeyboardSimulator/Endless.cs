@@ -686,12 +686,18 @@ namespace FireKeyboardSimulator
         {
             if (label1.Text.Length <= 0) timer_Form4.Interval -= 100;
             if (label1.Text.Length < 25) GroundMechanics(data);
-            else;
+            else
+            {
+                ;
+            }
         }
 
         private void Form4_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (label1.Text.Length == 0);
+            if (label1.Text.Length == 0)
+            {
+                ;
+            }
             else
             {
                 if (label1.Text[0] == e.KeyChar)

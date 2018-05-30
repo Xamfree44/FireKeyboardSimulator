@@ -69,11 +69,11 @@
     <Compile Include="Endless.Designer.cs">
       <DependentUpon>Endless.cs</DependentUpon>
     </Compile>
-    <Compile Include="Start_Form.cs">
+    <Compile Include="Start_Page.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Start_Form.Designer.cs">
-      <DependentUpon>Start_Form.cs</DependentUpon>
+    <Compile Include="Start_Page.Designer.cs">
+      <DependentUpon>Start_Page.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -89,8 +89,8 @@
     <EmbeddedResource Include="Endless.resx">
       <DependentUpon>Endless.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Start_Form.resx">
-      <DependentUpon>Start_Form.cs</DependentUpon>
+    <EmbeddedResource Include="Start_Page.resx">
+      <DependentUpon>Start_Page.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -124,6 +124,7 @@
   <ItemGroup>
     <None Include="Resources\logo.ico" />
     <None Include="Resources\fire.ico" />
+    <None Include="Resources\keyboard_highscore.png" />
     <Content Include="лого_финал1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
